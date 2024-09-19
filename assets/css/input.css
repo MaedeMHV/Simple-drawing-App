@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply h-screen flex items-center justify-center flex-col;
+}
+#canvas {
+  @apply border border-zinc-600 rounded-sm;
+}
+.toolbox {
+  @apply w-[800px] h-10 bg-yellow-100 flex items-center gap-2 justify-center;
+}
+.toolbox > *:nth-child(3) {
+  @apply w-10 h-6 bg-white  inline-flex items-center justify-center;
+}
+.toolbox .size {
+  @apply flex-row gap-[2px] flex;
+}
+.toolbox .size > * {
+  @apply w-7 h-6 bg-white inline-flex items-center justify-center;
+}
